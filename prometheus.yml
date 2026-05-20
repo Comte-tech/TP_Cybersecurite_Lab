@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 1s # On aspire les données toutes les secondes pour voir les attaques en temps réel
+
+scrape_configs:
+  - job_name: 'cible-ubuntu'
+    static_configs:
+      - targets: ['localhost:9100']
